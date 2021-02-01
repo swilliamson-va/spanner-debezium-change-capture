@@ -3,7 +3,7 @@
   "config": {
     "connector.class": "com.wepay.kafka.connect.bigquery.BigQuerySinkConnector",
     "tasks.max": "1",
-    "topics": "spanner_Test",
+    "topics": "mysql_Test",
     "autoCreateTables": "true",
     "autoUpdateSchemas": "true",
     "schemaRetriever": "com.wepay.kafka.connect.bigquery.schemaregistry.schemaretriever.SchemaRegistrySchemaRetriever",
@@ -11,7 +11,7 @@
     "bufferSize": "100000",
     "maxWriteSize": "10000",
     "tableWriteWait": "1000",
-    "project": "[PROJECT_ID]",
+    "project": "sre-labs-272120",
     "datasets": ".*=test_bq",
     "keyfile": "/secrets/credentials.json"
   }

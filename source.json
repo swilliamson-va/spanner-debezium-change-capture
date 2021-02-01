@@ -1,12 +1,12 @@
 {
-  "name": "spanner-connector",
+  "name": "mysql-connector",
   "config": {
     "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
     "tasks.max": "1",
-    "connection.url": "jdbc:cloudspanner:/projects/[PROJECT_ID]/instances/test-spanner-instance/databases/test-db;credentials=/secrets/credentials.json",
-    "topic.prefix": "spanner_",
-    "table.whitelist": "Test",
+    "connection.url": "jdbc:/projects/sre-labs-272120/instances/test-spanner-instance/databases/test;credentials=/secrets/credentials.json",
+    "topic.prefix": "mysql_",
     "poll.interval.ms": "1000",
+    "table.whitelist": "Test",
     "mode": "timestamp",
     "timestamp.column.name": "LastUpdateTime",
     "validate.non.null": "false"
